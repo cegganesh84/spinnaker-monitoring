@@ -125,7 +125,7 @@ def make_datadog_service(options):
   app_key = os.environ.get('DATADOG_APP_KEY', datadog_options.get('app_key'))
   host = options.get('datadog_host', datadog_options.get('host'))
   datadog_host = None
-  config = configparser.ConfigParser()
+  config = ConfigParser.ConfigParser()
 
   if not api_key or not app_key or host is None:
     config_path = options['dd_agent_config']
