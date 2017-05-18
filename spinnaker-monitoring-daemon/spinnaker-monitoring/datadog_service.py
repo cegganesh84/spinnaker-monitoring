@@ -16,7 +16,7 @@
 
 
 # pip install datadog
-import configparser
+import ConfigParser
 import logging
 import os
 import socket
